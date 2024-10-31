@@ -45,9 +45,9 @@ export default function Home() {
 
     if (!isValidTotalHours) {
       if (totalWork < 8) {
-        errors.push("O total de horas trabalhadas é menor que 8 horas.");
+        errors.push("O total de horas trabalhadas é menor que 8 horas. 🙄");
       } else if (totalWork > 8.25) {
-        errors.push("O total de horas trabalhadas excede 8 horas.");
+        errors.push("O total de horas trabalhadas excede 8 horas. 🙄");
       }
     }
 
@@ -141,7 +141,7 @@ export default function Home() {
 
         {result && result.success && isTotalHoursValid && (
           <div className="mt-4 p-4 rounded bg-green-800">
-            <p className="text-green-200 font-bold">Todos os horários estão corretos!</p>
+            <p className="text-green-200 font-bold">Horário correto, bom descanso! 😄</p>
           </div>
         )}
       </div>
